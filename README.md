@@ -22,7 +22,7 @@
 - **소비자들이 접근하기 용이한 컴퓨터 부품 사이트를 구현하였습니다.**
 
 **[ 개발 환경 ]**
-- 개발 환경 설명
+- HTML, CSS, JavaScript, JAVA, H2 Database, Apache Tomcat, IntelliJ IDEA, Spring Boot
 
 ## 팀프로젝트 상세
 프로젝트 상세 설명
