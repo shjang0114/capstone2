@@ -25,8 +25,10 @@
 - HTML, CSS, JavaScript, JAVA, H2 Database, Apache Tomcat, IntelliJ IDEA, Spring Boot
 
 ## 팀프로젝트 상세
-![03](https://github.com/user-attachments/assets/fdf699b2-475c-488e-a86c-072a999c9609)
-- 팀프로젝트 상세 설명
+- 메인 화면 : 컴퓨터 본체 내부를 미니멀리즘 하에 직관적으로 구성. 부품별 주요 정보 안내 가능.
+- 부품 목록 : 네이버 쇼핑 API를 활용하여 부품별 상품 정보 확인 및 구매처로 이동 가능.
+- 관심 목록 : 관심있는 부품이 있는 경우 해당 부품을 관심 목록에 저장 가능.
+- 게시판 : 이용자들 간에 컴퓨터 부품과 관련된 정보 공유 가능.
 
 ## 팀프로젝트 결과
 팀프로젝트 결과 설명
