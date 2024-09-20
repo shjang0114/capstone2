@@ -25,7 +25,8 @@
 - HTML, CSS, JavaScript, JAVA, H2 Database, Apache Tomcat, IntelliJ IDEA, Spring Boot
 
 ## 팀프로젝트 상세
-프로젝트 상세 설명
+![03](https://github.com/user-attachments/assets/fdf699b2-475c-488e-a86c-072a999c9609)
+- 프로젝트 상세 설명
 
 ## 팀프로젝트 결과
 프로젝트 결과 설명
