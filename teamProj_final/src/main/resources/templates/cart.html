@@ -42,7 +42,8 @@
             <tbody>
             <tr id='fruits' class="cart__list__detail" th:each="productRequest : ${productRequest}">
                 <td style="width: 5%;">
-                    <button class="cart__list__optionbtn1" th:data-product-request-id="${productRequest.productId}">삭제</button>
+                    <button class="cart__list__optionbtn1" th:data-product-request-id="${productRequest.productId}">삭제
+                    </button>
                 </td>
                 <td style="width: 13%;">
                     <img th:src="@{${productRequest.image}}" th:alt="${productRequest.title}">
@@ -65,12 +66,14 @@
     </span>
                 </td>
                 <td style="width: 15%;">
-                    <span class="price" th:text="${#numbers.formatInteger(productRequest.lprice, 0, 'COMMA')} + '원'"></span>
+                    <span class="price"
+                          th:text="${#numbers.formatInteger(productRequest.lprice, 0, 'COMMA')} + '원'"></span>
                     <br>
                 </td>
                 <td style="width: 15%;">
                     <button class="cart__list__orderbtn">
-                        <a class="link_btn" th:href="@{${productRequest.link}}" target="_blank" rel="noopener noreferrer">
+                        <a class="link_btn" th:href="@{${productRequest.link}}" target="_blank"
+                           rel="noopener noreferrer">
                             이동하기
                         </a>
                     </button>
@@ -91,13 +94,13 @@
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 </script>
 <script>
-    document.querySelectorAll('.cart__list__optionbtn1').forEach(function(button) {
-        button.addEventListener('click', function() {
+    document.querySelectorAll('.cart__list__optionbtn1').forEach(function (button) {
+        button.addEventListener('click', function () {
             var productRequestId = this.getAttribute('data-product-request-id');
 
             fetch('/api/productRequests/' + productRequestId, {
                 method: 'DELETE'
-            }).then(function(response) {
+            }).then(function (response) {
                 if (response.ok) {
                     // If the product request was successfully deleted, remove the table row.
                     var row = document.getElementById('fruits');
