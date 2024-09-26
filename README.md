@@ -34,6 +34,6 @@
 ### 메인 페이지
 ![01](https://github.com/user-attachments/assets/00803690-8bff-467a-9e5e-0a7140b9d2f1)
 - 메인 페이지 설명
-### 주요 기능 2
-**결과 이미지**
-- 팀프로젝트 결과 설명
+### 부품 목록
+![02](https://github.com/user-attachments/assets/6642a0ca-7055-44a3-b98a-73709c2d28bb)
+- 부품 목록 설명
