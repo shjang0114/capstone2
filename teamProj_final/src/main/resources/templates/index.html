@@ -13,25 +13,30 @@
 </head>
 <body>
 <nav th:replace="~{main_up :: main_upFragment}"></nav>
+<!-- 데스크톱 UI -->
 <div class="container1">
+    <!-- 컴퓨터케이스 -->
     <div class="a bg-dark text-center">
         <button type="button" class="aa btn btn-dark" data-bs-toggle="tooltip" data-bs-placement="right"
                 data-bs-custom-class="custom-tooltip" data-bs-html="true"
                 data-bs-title='<span class="required">부품들을 보호하는<br>역할을 합니다.</span><br><br>다른 부품들의 크기에<br>유의해서 적절한 크기의<br>케이스를 선택하세요.<br><br><span class="required2">특히 파워, 메인보드,<br>GPU 및 쿨러 조립 간에<br>문제가 자주 생깁니다!</span>'
                 value="computercase" onclick="deleteAllProducts();handleClick(this);">케이스</button>
     </div>
+    <!-- 모니터 -->
     <div class="b bg-warning text-center">
         <button type="button" class="bb btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="right"
                 data-bs-custom-class="custom-tooltip" data-bs-html="true"
                 data-bs-title='<span class="required">PC의 화면 송출을<br>담당합니다.</span><br><br>주사율(hz)이 높을수록<br>화면이 부드럽게 송출됩니다.<br><br><span class="required2">전체적인 PC 사양이 낮아<br>발생하는 렉을 감소시키지는<br>않습니다!</span>'
                 value="monitor" onclick="deleteAllProducts();handleClick(this);">모니터</button>
     </div>
+    <!-- 쿨러 -->
     <div class="c bg-primary text-center">
         <button type="button" class="cc btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="right"
                 data-bs-custom-class="custom-tooltip" data-bs-html="true"
                 data-bs-title='<span class="required">부품에서 발생하는<br>열을 해소시킵니다.</span><br><br>케이스와의 호환이<br>가능한지 확인하시고<br>다른 부품과의 간섭,<br><br><span class="required2">특히 메모리 간섭이 있지<br>않은가 반드시 확인하세요!</span>'
                 value="cooler" onclick="deleteAllProducts();handleClick(this);">쿨러</button>
     </div>
+    <!-- CPU -->
     <div class="d bg-danger text-center">
         <button type="button" class="dd btn btn-danger" data-bs-toggle="tooltip" data-bs-placement="right"
                 data-bs-custom-class="custom-tooltip" data-bs-html="true"
@@ -39,36 +44,42 @@
 
                 value="cpu" onclick="deleteAllProducts();handleClick(this);">CPU</button>
     </div>
+    <!-- SSD -->
     <div class="e bg-success text-center">
         <button type="button" class="ee btn btn-success" data-bs-toggle="tooltip" data-bs-placement="right"
                 data-bs-custom-class="custom-tooltip" data-bs-html="true"
                 data-bs-title='<span class="required">데이터를 영구 저장하는<br>장치입니다.</span><br><br>SSD는 HDD에 비해서<br>용량이 작지만,<br>속도가 빠릅니다. 다만,<br>용량의 크기에 비해서<br>가격이 비싼 편에 속합니다.'
                 value="ssd" onclick="deleteAllProducts();handleClick(this);">SSD</button>
     </div>
+    <!-- RAM -->
     <div style="background-color:rgb(212, 38, 212)" class="f text-center">
         <button type="button" class="ff btn cusbtn2" data-bs-toggle="tooltip" data-bs-placement="right"
                 data-bs-custom-class="custom-tooltip" data-bs-html="true"
                 data-bs-title='<span class="required">데이터를 임시로<br>저장하는 부품입니다.</span><br><br>RAM의 양이 많을수록<br>렉이 줄어듭니다.<br><br><span class="required2">가벼운 작업 이용자는 8G,<br>무거운 작업 이용자는 16G,<br>전문적인 작업 이용자는 32G<br>즈음의 양을 추천합니다!</span>'
                 value="ram" onclick="deleteAllProducts();handleClick(this);">RAM</button>
     </div>
+    <!-- 메인보드 -->
     <div style="background-color:orange" class="g text-center">
         <button type="button" class="gg btn cusbtn3" data-bs-toggle="tooltip" data-bs-placement="right"
                 data-bs-custom-class="custom-tooltip" data-bs-html="true"
                 data-bs-title='<span class="required">부품들을 연결하는<br>부품입니다.</span><br><br>구매하실 CPU와 GPU과의<br>호환이 가능한지 확인하시고<br>구매를 결정하세요.<br><br><span class="required2">구매할 CPU와 GPU를<br>결정하지 않으셨다면 먼저<br>선택한 다음에 메인보드를<br>결정하세요!</span>'
                 value="mainboard" onclick="deleteAllProducts();handleClick(this);">메인보드</button>
     </div>
+    <!-- GPU -->
     <div style="background-color:pink" class="h text-center">
         <button type="button" class="hh btn cusbtn1" data-bs-toggle="tooltip" data-bs-placement="right"
                 data-bs-custom-class="custom-tooltip" data-bs-html="true"
                 data-bs-title='<span class="required">디지털 신호를 영상 신호로<br>변환하는 부품입니다.</span><br><br>본인이 컴퓨터를 사용해<br>진행할 작업의 수준에 맞는<br>사양을 사전에 조사하여<br>구매하세요.<br><br><span class="required2">조립할 때, 모니터 케이블을<br>CPU 슬롯에 연결하세요!<br>(메인보드와 혼동하는<br>분들이 많습니다.)</span>'
                 value="gpu" onclick="deleteAllProducts();handleClick(this);">GPU</button>
     </div>
+    <!-- 파워 -->
     <div class="i bg-light text-center">
         <button type="button" class="ii btn btn-light" data-bs-toggle="tooltip" data-bs-placement="right"
                 data-bs-custom-class="custom-tooltip" data-bs-html="true"
                 data-bs-title='<span class="required">전원을 공급하는<br>부품입니다.</span><br><br>파워는 출력 용량에 대비해서<br>안정성이 증가하는 특징이<br>있으니 충분한 용량의 제품을<br>구매하세요.<br><br><span class="required2">이때 최대출력량이 아니라,<br>정격출력량 위주로 보시고<br>제품을 선택하세요!</span>'
                 value="power" onclick="deleteAllProducts();handleClick(this);">파워</button>
     </div>
+    <!-- HDD -->
     <div class="j bg-secondary text-center">
         <button type="button" class="jj btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right"
                 data-bs-custom-class="custom-tooltip" data-bs-html="true"
