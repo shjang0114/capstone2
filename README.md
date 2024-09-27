@@ -34,6 +34,16 @@
 ### 메인 페이지
 ![01](https://github.com/user-attachments/assets/00803690-8bff-467a-9e5e-0a7140b9d2f1)
 - 메인 페이지 설명
+
 ### 부품 목록
 ![02](https://github.com/user-attachments/assets/6642a0ca-7055-44a3-b98a-73709c2d28bb)
 - 부품 목록 설명
+
+### 관심 목록
+![04](https://github.com/user-attachments/assets/0fac5665-f8b0-48b1-ba6d-af372d53137d)
+![05](https://github.com/user-attachments/assets/9c0273de-28ed-463d-9073-c51ca3e52104)
+-  관심 목록 설명
+
+### 커뮤니티 게시판
+![06](https://github.com/user-attachments/assets/760d1a1f-e132-4810-aeee-e002e88b08dd)
+-  커뮤니티 게시판 설명
