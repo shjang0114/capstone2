@@ -21,6 +21,9 @@
 - **구매에 도움을 줄 수 있는 정보들을 안내하여,**
 - **소비자들이 접근하기 용이한 컴퓨터 부품 사이트를 구현하였습니다.**
 
+**[ 맡은 역할 ]**
+- 프로젝트 총괄, 데이터베이스 설계, 메인 페이지 및 관심 목록 설계 및 구현
+
 **[ 개발 언어 및 도구 ]**
 - HTML, CSS, JavaScript, JAVA, H2 Database, Apache Tomcat, IntelliJ IDEA, Spring Boot
 
