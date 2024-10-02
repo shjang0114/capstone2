@@ -11,11 +11,18 @@ import java.util.List;
 @RequiredArgsConstructor
 public class ProductRequestService {
     private final ProductRequestRepository productRequestRepository;
-    @Transactional
-    public void saveItem(ProductRequest productRequest){productRequestRepository.save(productRequest);}
-
-    public List<ProductRequest>findItems(){return productRequestRepository.findAll();}
 
     @Transactional
-    public void deleteProductRequest(Long productId){productRequestRepository.deleteProductRequest(productId);}
+    public void saveItem(ProductRequest productRequest) {
+        productRequestRepository.save(productRequest);
+    }
+
+    public List<ProductRequest> findItems() {
+        return productRequestRepository.findAll();
+    }
+
+    @Transactional
+    public void deleteProductRequest(Long productId) {
+        productRequestRepository.deleteProductRequest(productId);
+    }
 }

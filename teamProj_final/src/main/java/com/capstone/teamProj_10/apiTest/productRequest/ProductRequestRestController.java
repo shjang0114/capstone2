@@ -26,7 +26,6 @@ public class ProductRequestRestController {
         if (product == null) {
             throw new IllegalArgumentException("Product with id " + requestDto.getProductId() + " not found");
         }
-
         ProductRequest productRequest = new ProductRequest();
         productRequest.setProductId(product.getProductId());
         productRequest.setTitle(product.getTitle());

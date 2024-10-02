@@ -20,11 +20,12 @@ public class ProductRequestController {
     @GetMapping("/cart")
     public String cart(Model model) {
         List<ProductRequest> productRequestList = productRequestService.findItems();
-        model.addAttribute("productRequest",productRequestList);
+        model.addAttribute("productRequest", productRequestList);
         return "cart";
     }
+
     @DeleteMapping("/api/productRequests/{id}")
-    public ResponseEntity<Void>deleteProductRequest(@PathVariable Long id){
+    public ResponseEntity<Void> deleteProductRequest(@PathVariable Long id) {
         productRequestService.deleteProductRequest(id);
         return ResponseEntity.noContent().build();
     }

@@ -10,19 +10,22 @@ import java.util.List;
 @RequiredArgsConstructor
 public class ProductRequestRepository {
     private final EntityManager em;
-    public void save(ProductRequest productRequest){
-        if(productRequest.getProductId() == null){
+
+    public void save(ProductRequest productRequest) {
+        if (productRequest.getProductId() == null) {
             em.persist(productRequest);
-        }else{
+        } else {
             em.merge(productRequest);
         }
     }
-    public List<ProductRequest>findAll(){
+
+    public List<ProductRequest> findAll() {
         return em.createQuery("select p from ProductRequest p", ProductRequest.class).getResultList();
     }
-    public void deleteProductRequest(Long productId){
-        ProductRequest productRequest =em.find(ProductRequest.class,productId);
-        if(productRequest == null){
+
+    public void deleteProductRequest(Long productId) {
+        ProductRequest productRequest = em.find(ProductRequest.class, productId);
+        if (productRequest == null) {
             throw new IllegalArgumentException("ProductRequest with productId" + productId + "not found");
         }
         em.remove(productRequest);

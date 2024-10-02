@@ -17,17 +17,21 @@ public class ProductRequest {
 
     @Column(nullable = false)
     private String link;
+
     @Column(nullable = false)
     private String category2;
 
     private String category3;
 
     private String category4;
+
     @Column(nullable = false)
     private String maker;
+
     @Id
     @Column(name = "item_id")
     private Long productId;
+
     @Column(nullable = false)
     private int lprice;
 
