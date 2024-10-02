@@ -15,23 +15,23 @@ import java.util.Set;
 @Setter
 @Entity
 public class Answer {
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer id;
-	
-	@Column(columnDefinition = "TEXT")
-	private String content;
-	
-	private LocalDateTime createDate;
-	
-	@ManyToOne
-	private Question question;
-	
-	@ManyToOne
-	private SiteUser author;
-	
-	private LocalDateTime modifyDate;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
 
-	@ManyToMany
-	Set<SiteUser> voter;
+    @Column(columnDefinition = "TEXT")
+    private String content;
+
+    private LocalDateTime createDate;
+
+    @ManyToOne
+    private Question question;
+
+    @ManyToOne
+    private SiteUser author;
+
+    private LocalDateTime modifyDate;
+
+    @ManyToMany
+    Set<SiteUser> voter;
 }

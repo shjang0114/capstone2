@@ -17,25 +17,29 @@ import java.util.stream.Collectors;
 public class ItemService {
     private final ItemRepository itemRepository;
     private final ProductRepository productRepository;
+
     @Transactional
     public void saveItem(Product product) {
         itemRepository.save(product);
     }
+
     public List<Product> findItems() {
         return itemRepository.findAll();
     }
+
     public Product findOne(Long itemId) {
         return itemRepository.findOne(itemId);
     }
 
     @Transactional
-    public int deleteAll(){return itemRepository.deleteAll();}
+    public int deleteAll() {
+        return itemRepository.deleteAll();
+    }
 
-    public Page<Product> getList(int page){
+    public Page<Product> getList(int page) {
         Pageable pageable = PageRequest.of(page, 10);
         return this.productRepository.findAll(pageable);
     }
-
 
 
     @Transactional
@@ -104,7 +108,7 @@ public class ItemService {
     public List<Product> findRamItems() {
         List<Product> allItems = itemRepository.findAll();
         //DDR 했더니 글카에 DDR포함된놈이 DDR쪽에 떠버린다
-        List<String> keywords = Arrays.asList("ram","램","메모리","DDR");
+        List<String> keywords = Arrays.asList("ram", "램", "메모리", "DDR");
 
         List<Product> ramItems = allItems.stream()
                 .filter(item -> keywords.stream()
@@ -128,7 +132,7 @@ public class ItemService {
 
     public List<Product> findMainboardItems() {
         List<Product> allItems = itemRepository.findAll();
-        List<String> keywords = Arrays.asList("메인보드","mainboard", "MSI", "ASUS", "에이수스",
+        List<String> keywords = Arrays.asList("메인보드", "mainboard", "MSI", "ASUS", "에이수스",
                 "z790", "z690", "z590", "z490", "z390", "z290", "z190",
                 "x770", "x670", "x570", "x470", "x370", "x270", "x170",
                 "b760", "b660", "b560", "b460", "b360", "b260", "b160",
@@ -146,7 +150,7 @@ public class ItemService {
 
     public List<Product> findPowerItems() {
         List<Product> allItems = itemRepository.findAll();
-        List<String> keywords = Arrays.asList("파워","POWER");
+        List<String> keywords = Arrays.asList("파워", "POWER");
 
         List<Product> powerItems = allItems.stream()
                 .filter(item -> keywords.stream()
@@ -158,8 +162,8 @@ public class ItemService {
 
     public List<Product> findCoolerItems() {
         List<Product> allItems = itemRepository.findAll();
-        List<String> keywords = Arrays.asList("쿨러","COOLER", "PCCOOLER","DEEPCOOL","NZXT", "Thermalright", "darkFlash",
-                "NOCTUA","ARCTIC", "리안리", "잘만");
+        List<String> keywords = Arrays.asList("쿨러", "COOLER", "PCCOOLER", "DEEPCOOL", "NZXT", "Thermalright", "darkFlash",
+                "NOCTUA", "ARCTIC", "리안리", "잘만");
 
         List<Product> coolerItems = allItems.stream()
                 .filter(item -> keywords.stream()

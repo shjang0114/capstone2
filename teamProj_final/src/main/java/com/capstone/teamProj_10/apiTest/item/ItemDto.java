@@ -22,7 +22,6 @@ public class ItemDto {
     private int price;
     private int stockQuantity;
 
-
     public ItemDto() {
     }
 
@@ -34,7 +33,7 @@ public class ItemDto {
         this.category2 = itemJson.getString("category2");
         this.category3 = itemJson.getString("category3");
         this.category4 = itemJson.getString("category4");
-        this.maker =  itemJson.getString("maker");
+        this.maker = itemJson.getString("maker");
         this.productId = itemJson.getLong("productId");
     }
 

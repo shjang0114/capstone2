@@ -18,10 +18,6 @@ import java.time.LocalDateTime;
 @Entity
 public class Product {
 
-
-
-
-
     @Column(nullable = false)
     private String title;
 
@@ -30,23 +26,26 @@ public class Product {
 
     @Column(nullable = false)
     private String link;
+
     @Column(nullable = false)
     private String category2;
 
     private String category3;
 
     private String category4;
+
     @Column(nullable = false)
     private String maker;
+
     @Id
     @Column(name = "item_id")
     private Long productId;
+
     @Column(nullable = false)
     private int lprice;
 
     @Column(nullable = false)
     private int myprice;
-
 
     @Column(nullable = false)
     private int stockQuantity;
@@ -89,7 +88,6 @@ public class Product {
 
     @LastModifiedDate
     private LocalDateTime modifiedAt;
-
 
     public void updateByItemDto(ItemDto itemDto) {
         this.title = itemDto.getTitle();

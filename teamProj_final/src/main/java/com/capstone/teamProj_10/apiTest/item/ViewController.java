@@ -46,91 +46,91 @@ public class ViewController {
     }
 
     @GetMapping("/cpu")
-    public String cpu(Model model,@RequestParam(value = "page",defaultValue = "0")int page) {
+    public String cpu(Model model, @RequestParam(value = "page", defaultValue = "0") int page) {
         List<Product> productList = itemService.findCpuItems();
-        Page<Product>paging = this.itemService.getList(page);
-        model.addAttribute("paging",paging);
+        Page<Product> paging = this.itemService.getList(page);
+        model.addAttribute("paging", paging);
         model.addAttribute("productList", productList);
         return "/Products/cpu";
     }
 
     @GetMapping("/gpu")
-    public String gpu(Model model,@RequestParam(value = "page",defaultValue = "0")int page) {
+    public String gpu(Model model, @RequestParam(value = "page", defaultValue = "0") int page) {
         List<Product> productList = itemService.findGpuItems();
-        Page<Product>paging = this.itemService.getList(page);
-        model.addAttribute("paging",paging);
+        Page<Product> paging = this.itemService.getList(page);
+        model.addAttribute("paging", paging);
         model.addAttribute("productList", productList);
         return "/Products/gpu";
     }
 
     @GetMapping("/ssd")
-    public String ssd(Model model,@RequestParam(value = "page",defaultValue = "0")int page) {
+    public String ssd(Model model, @RequestParam(value = "page", defaultValue = "0") int page) {
         List<Product> productList = itemService.findSsdItems();
-        Page<Product>paging = this.itemService.getList(page);
-        model.addAttribute("paging",paging);
+        Page<Product> paging = this.itemService.getList(page);
+        model.addAttribute("paging", paging);
         model.addAttribute("productList", productList);
         return "/Products/ssd";
     }
 
     @GetMapping("/hdd")
-    public String hdd(Model model,@RequestParam(value = "page",defaultValue = "0")int page) {
+    public String hdd(Model model, @RequestParam(value = "page", defaultValue = "0") int page) {
         List<Product> productList = itemService.findHddItems();
-        Page<Product>paging = this.itemService.getList(page);
-        model.addAttribute("paging",paging);
+        Page<Product> paging = this.itemService.getList(page);
+        model.addAttribute("paging", paging);
         model.addAttribute("productList", productList);
         return "/Products/hdd";
     }
 
     @GetMapping("/ram")
-    public String ram(Model model,@RequestParam(value = "page",defaultValue = "0")int page) {
+    public String ram(Model model, @RequestParam(value = "page", defaultValue = "0") int page) {
         List<Product> productList = itemService.findRamItems();
-        Page<Product>paging = this.itemService.getList(page);
-        model.addAttribute("paging",paging);
+        Page<Product> paging = this.itemService.getList(page);
+        model.addAttribute("paging", paging);
         model.addAttribute("productList", productList);
         return "/Products/ram";
     }
 
     @GetMapping("/computercase")
-    public String computercase(Model model,@RequestParam(value = "page",defaultValue = "0")int page) {
+    public String computercase(Model model, @RequestParam(value = "page", defaultValue = "0") int page) {
         List<Product> productList = itemService.findComputercaseItems();
-        Page<Product>paging = this.itemService.getList(page);
-        model.addAttribute("paging",paging);
+        Page<Product> paging = this.itemService.getList(page);
+        model.addAttribute("paging", paging);
         model.addAttribute("productList", productList);
         return "/Products/computercase";
     }
 
     @GetMapping("/mainboard")
-    public String mainboard(Model model,@RequestParam(value = "page",defaultValue = "0")int page) {
+    public String mainboard(Model model, @RequestParam(value = "page", defaultValue = "0") int page) {
         List<Product> productList = itemService.findMainboardItems();
-        Page<Product>paging = this.itemService.getList(page);
-        model.addAttribute("paging",paging);
+        Page<Product> paging = this.itemService.getList(page);
+        model.addAttribute("paging", paging);
         model.addAttribute("productList", productList);
         return "/Products/mainboard";
     }
 
     @GetMapping("/power")
-    public String power(Model model,@RequestParam(value = "page",defaultValue = "0")int page) {
+    public String power(Model model, @RequestParam(value = "page", defaultValue = "0") int page) {
         List<Product> productList = itemService.findPowerItems();
-        Page<Product>paging = this.itemService.getList(page);
-        model.addAttribute("paging",paging);
+        Page<Product> paging = this.itemService.getList(page);
+        model.addAttribute("paging", paging);
         model.addAttribute("productList", productList);
         return "/Products/power";
     }
 
     @GetMapping("/cooler")
-    public String cooler(Model model,@RequestParam(value = "page",defaultValue = "0")int page) {
+    public String cooler(Model model, @RequestParam(value = "page", defaultValue = "0") int page) {
         List<Product> productList = itemService.findCoolerItems();
-        Page<Product>paging = this.itemService.getList(page);
-        model.addAttribute("paging",paging);
+        Page<Product> paging = this.itemService.getList(page);
+        model.addAttribute("paging", paging);
         model.addAttribute("productList", productList);
         return "/Products/cooler";
     }
 
     @GetMapping("/monitor")
-    public String monitor(Model model,@RequestParam(value = "page",defaultValue = "0")int page) {
+    public String monitor(Model model, @RequestParam(value = "page", defaultValue = "0") int page) {
         List<Product> productList = itemService.findMonitorItems();
-        Page<Product>paging = this.itemService.getList(page);
-        model.addAttribute("paging",paging);
+        Page<Product> paging = this.itemService.getList(page);
+        model.addAttribute("paging", paging);
         model.addAttribute("productList", productList);
         return "/Products/monitor";
     }
@@ -141,11 +141,9 @@ public class ViewController {
         return "/mypage";
     }
 
-
     @GetMapping("/center")
     public String center() {
         return "/center";
     }
-
 
 }

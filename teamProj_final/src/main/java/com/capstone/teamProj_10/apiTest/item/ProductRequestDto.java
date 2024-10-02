@@ -13,5 +13,4 @@ public class ProductRequestDto {
     private String maker;
     private Long productId;
     private int lprice;
-
 }
