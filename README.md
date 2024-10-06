@@ -43,7 +43,8 @@
 - 각 목록에 마우스를 올려두면 부품에 대한 정보들을 확인할 수 있도록 구현하였습니다.
 
 ### ※ 부품 목록
-<img src="https://github.com/user-attachments/assets/6642a0ca-7055-44a3-b98a-73709c2d28bb"  width="50%" />
+<img src="https://github.com/user-attachments/assets/6642a0ca-7055-44a3-b98a-73709c2d28bb"  width="48%" />
+<img src="https://github.com/user-attachments/assets/296e9128-e4d8-450c-a6e2-0571c9cff75c"  width="48%" />
 
 - 네이버 쇼핑 API를 활용하여 구현하였으며, 부품별 구매 관련 정보들을 확인할 수 있습니다.
 - 우측의 관심 버튼을 클릭 시, 해당 부품을 관심 목록에 저장할 수 있습니다.
