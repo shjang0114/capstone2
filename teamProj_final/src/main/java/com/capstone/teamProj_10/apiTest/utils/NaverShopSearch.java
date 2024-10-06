@@ -20,7 +20,6 @@ public class NaverShopSearch {
         headers.add("X-Naver-Client-Id", "S3xowYlDYXpN52Qyur4w");
         headers.add("X-Naver-Client-Secret", "4ws8LoYgtw"); //네이버 api 인증정보
         String body = "";
-
         HttpEntity<String> requestEntity = new HttpEntity<String>(body, headers);
         ResponseEntity<String> responseEntity = rest.exchange //GET 요청 수행 
                 ("https://openapi.naver.com/v1/search/shop.json?query="

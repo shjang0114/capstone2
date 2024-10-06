@@ -17,44 +17,45 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 @EnableWebSecurity
 @EnableMethodSecurity(prePostEnabled = true)
 public class SecurityConfig {
-	
-	@Bean
-	AuthenticationManager authenticationManager(AuthenticationConfiguration authenticationConfiguration)
-			throws Exception {
-		return authenticationConfiguration.getAuthenticationManager();
-	}
-	@Bean
-	public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-		http.authorizeHttpRequests()
-			.requestMatchers(new AntPathRequestMatcher("/**")).permitAll()
-			.requestMatchers(new AntPathRequestMatcher("/user/pwchange")).permitAll()
-			.requestMatchers(new AntPathRequestMatcher("/deleteAll")).permitAll()
-			.requestMatchers(new AntPathRequestMatcher("api/products/request")).permitAll()
-				.requestMatchers(new AntPathRequestMatcher("/api/productRequests/{id}")).permitAll()
-			.and()
-			.csrf()
-			.ignoringRequestMatchers(new AntPathRequestMatcher("/h2-console/**"))
-			.ignoringRequestMatchers(new AntPathRequestMatcher("/user/pwchange"))
-			.ignoringRequestMatchers(new AntPathRequestMatcher("/deleteAll"))
-			.ignoringRequestMatchers(new AntPathRequestMatcher("/api/products/request"))
-			.ignoringRequestMatchers(new AntPathRequestMatcher("/api/productRequests/{id}"))
-			.and()
-			.headers()
-			.addHeaderWriter(new XFrameOptionsHeaderWriter(XFrameOptionsHeaderWriter.XFrameOptionsMode.SAMEORIGIN))
-			.and()
-			.formLogin()
-			.loginPage("/user/login")
-			.defaultSuccessUrl("/")
-			.and()
-			.logout()
-			.logoutRequestMatcher(new AntPathRequestMatcher("/user/logout"))
-			.logoutSuccessUrl("/")
-			.invalidateHttpSession(true);
-		return http.build();
-	}
 
-	@Bean
-	PasswordEncoder passwordEncoder() {
-		return new BCryptPasswordEncoder();
-	}
+    @Bean
+    AuthenticationManager authenticationManager(AuthenticationConfiguration authenticationConfiguration)
+            throws Exception {
+        return authenticationConfiguration.getAuthenticationManager();
+    }
+
+    @Bean
+    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+        http.authorizeHttpRequests()
+                .requestMatchers(new AntPathRequestMatcher("/**")).permitAll()
+                .requestMatchers(new AntPathRequestMatcher("/user/pwchange")).permitAll()
+                .requestMatchers(new AntPathRequestMatcher("/deleteAll")).permitAll()
+                .requestMatchers(new AntPathRequestMatcher("api/products/request")).permitAll()
+                .requestMatchers(new AntPathRequestMatcher("/api/productRequests/{id}")).permitAll()
+                .and()
+                .csrf()
+                .ignoringRequestMatchers(new AntPathRequestMatcher("/h2-console/**"))
+                .ignoringRequestMatchers(new AntPathRequestMatcher("/user/pwchange"))
+                .ignoringRequestMatchers(new AntPathRequestMatcher("/deleteAll"))
+                .ignoringRequestMatchers(new AntPathRequestMatcher("/api/products/request"))
+                .ignoringRequestMatchers(new AntPathRequestMatcher("/api/productRequests/{id}"))
+                .and()
+                .headers()
+                .addHeaderWriter(new XFrameOptionsHeaderWriter(XFrameOptionsHeaderWriter.XFrameOptionsMode.SAMEORIGIN))
+                .and()
+                .formLogin()
+                .loginPage("/user/login")
+                .defaultSuccessUrl("/")
+                .and()
+                .logout()
+                .logoutRequestMatcher(new AntPathRequestMatcher("/user/logout"))
+                .logoutSuccessUrl("/")
+                .invalidateHttpSession(true);
+        return http.build();
+    }
+
+    @Bean
+    PasswordEncoder passwordEncoder() {
+        return new BCryptPasswordEncoder();
+    }
 }
