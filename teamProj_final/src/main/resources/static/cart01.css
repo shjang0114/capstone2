@@ -6,8 +6,7 @@ body {
     box-sizing: border-box;
 }
 
-p,
-span {
+p, span {
     margin: 0;
 }
 
