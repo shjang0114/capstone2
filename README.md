@@ -59,8 +59,14 @@
 - 좌측 삭제 버튼을 통해 해당 부품을 목록에서 삭제할 수 있습니다.
 
 ### ※ 커뮤니티 게시판
+
 <img src="https://github.com/user-attachments/assets/1c5788f9-a341-43fd-8cbf-c59415ab6c93"  width="48%" />
 <img src="https://github.com/user-attachments/assets/760d1a1f-e132-4810-aeee-e002e88b08dd"  width="48%" />
 
 - 게시글과 댓글을 작성할 수 있는 커뮤니티 게시판입니다.
 - 사이트에서 제공하는 정보 이외에 사용자들 간에 컴퓨터와 관련된 정보를 공유할 수 있습니다.
+
+### ※ 고객센터
+<img src="https://github.com/user-attachments/assets/02078b2c-d356-44c9-bc31-c236668a5127"  width="48%" />
+
+- 사이트에 이용에 대한 간단한 정보들을 확인할 수 있는 고객센터입니다. 
