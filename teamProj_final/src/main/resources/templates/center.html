@@ -126,16 +126,21 @@
         <div id="panelsStayOpen-collapseOne6" class="accordion-collapse collapse"
              aria-labelledby="panelsStayOpen-headingOne6">
             <div class="accordion-body">
-                <strong>계정 탈퇴의 경우</strong> 저희 사이트에서는 계정 탈퇴 기능을 제공해드리지 않고 있습니다.
+                <strong>계정 탈퇴의 경우</strong> 현재 저희 사이트에서는 계정 탈퇴 기능을 제공해드리지 않고 있습니다.
             </div>
         </div>
     </div>
 </div>
 <br>
 <div class="cus-title-center2">
-    더 궁금하신 사항은 이메일을 통해서 문의해 주세요. ( 20181191@kiu.kr )
+    더 궁금하신 사항은&nbsp;<span class="badge text-bg-primary" data-bs-toggle="tooltip"
+                     data-bs-title="20181191@kiu.kr">이메일</span>을 통해서 문의해 주세요.
 </div>
 <br>
+<script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+</script>
 </body>
 
 </html>
