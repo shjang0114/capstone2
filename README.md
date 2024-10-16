@@ -35,9 +35,11 @@
 
 ## 팀프로젝트 결과
 ### ※ 메인 페이지
-<img src="https://github.com/user-attachments/assets/00803690-8bff-467a-9e5e-0a7140b9d2f1"  width="50%" />
 
-- 화면 중앙에 일반적인 컴퓨터 본체 UI를 배치하였습니다.
+<img src="https://github.com/user-attachments/assets/00803690-8bff-467a-9e5e-0a7140b9d2f1"  width="48%" />
+<img src="https://github.com/user-attachments/assets/2d432d97-74df-4aab-a494-8fb9b091d310"  width="30%" />
+
+- 화면 중앙에 일반적인 컴퓨터 본체를 표현한 UI를 배치하였습니다.
 - 내부의 복잡한 구조를 추상화 하여 직관적으로 디자인하였습니다.
 - 주요 부품 이외의 장치들은 남은 공간에 추가로 배치하였습니다.
 - 각 목록에 마우스를 올려둘 시, 부품에 대한 정보를 확인할 수 있습니다.
