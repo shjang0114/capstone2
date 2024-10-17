@@ -40,7 +40,7 @@
 <img src="https://github.com/user-attachments/assets/2d432d97-74df-4aab-a494-8fb9b091d310"  width="26%" />
 <img src="https://github.com/user-attachments/assets/4539726d-1e41-415f-b66a-91ab2dd67d26"  width="23%" />
 
-- 화면 중앙에 일반적인 컴퓨터 본체를 표현한 UI를 배치하였습니다.
+- 화면 중앙에 일반적인 컴퓨터 본체를 미니멀리즘으로 표현한 UI를 배치하였습니다.
 - 내부의 복잡한 구조를 추상화 하여 직관적으로 디자인하였습니다.
 - 주요 부품 이외의 장치들은 남은 공간에 추가로 배치하였습니다.
 - 각 목록에 마우스를 올려둘 시, 부품에 대한 정보를 확인할 수 있습니다.
