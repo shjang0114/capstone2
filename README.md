@@ -37,7 +37,8 @@
 ### ※ 메인 페이지
 
 <img src="https://github.com/user-attachments/assets/00803690-8bff-467a-9e5e-0a7140b9d2f1"  width="48%" />
-<img src="https://github.com/user-attachments/assets/2d432d97-74df-4aab-a494-8fb9b091d310"  width="30%" />
+<img src="https://github.com/user-attachments/assets/2d432d97-74df-4aab-a494-8fb9b091d310"  width="26%" />
+<img src="https://github.com/user-attachments/assets/4539726d-1e41-415f-b66a-91ab2dd67d26"  width="23%" />
 
 - 화면 중앙에 일반적인 컴퓨터 본체를 표현한 UI를 배치하였습니다.
 - 내부의 복잡한 구조를 추상화 하여 직관적으로 디자인하였습니다.
