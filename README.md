@@ -25,7 +25,7 @@
 - 프로젝트 총괄, 데이터베이스 설계, 메인 페이지 및 관심 목록 설계 및 구현
 
 **[ 개발 언어 및 도구 ]**
-- HTML, CSS, JavaScript, Bootstrap, JAVA, H2 Database, Apache Tomcat, Spring Boot, IntelliJ IDEA
+- HTML, CSS, JavaScript, Bootstrap, JAVA, H2 Database, Apache Tomcat, Naver Open API, Spring Boot
 
 ## 팀프로젝트 상세
 - 메인 화면: 컴퓨터 본체 내부를 미니멀리즘 기준으로 구성. 부품별 주요 정보 안내.
