@@ -45,8 +45,9 @@
 - 각 목록에 마우스를 올려둘 시, 부품에 대한 정보를 확인할 수 있습니다.
 
 ### ※ 부품 목록
-<img src="https://github.com/user-attachments/assets/6642a0ca-7055-44a3-b98a-73709c2d28bb"  width="48%" />
-<img src="https://github.com/user-attachments/assets/296e9128-e4d8-450c-a6e2-0571c9cff75c"  width="48%" />
+|<img src="https://github.com/user-attachments/assets/6642a0ca-7055-44a3-b98a-73709c2d28bb" />|<img src="https://github.com/user-attachments/assets/296e9128-e4d8-450c-a6e2-0571c9cff75c" />|
+|:---:|:---:|
+| 부품 목록 1 | 부품 목록 2 |
 
 - 네이버 쇼핑 API를 활용하여 구현하였으며, 부품별 상품 정보를 확인할 수 있습니다.
 - 상단 네비게이션 바를 통해, 현재 목록 외에 다른 부품 목록으로 이동할 수 있습니다.
