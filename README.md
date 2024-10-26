@@ -56,7 +56,7 @@
 ### ※ 관심 목록
 |<img src="https://github.com/user-attachments/assets/0fac5665-f8b0-48b1-ba6d-af372d53137d" />|<img src="https://github.com/user-attachments/assets/9c0273de-28ed-463d-9073-c51ca3e52104" />|
 |:---:|:---:|
-| 관심 목록 1 | 관심 목록 2 |
+| 관심 목록 | 구매 사이트 |
 
 - 부품 목록 화면에서 저장한 부품들을 확인할 수 있습니다.
 - 우측의 구매 버튼을 클릭 시, 해당 부품을 구매할 수 있는 사이트로 이동할 수 있습니다.
