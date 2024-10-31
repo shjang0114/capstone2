@@ -71,8 +71,8 @@
 - 사이트에서 제공하는 정보 이외에 사용자들 간에 컴퓨터와 관련된 정보를 공유할 수 있습니다.
 
 ### ※ 로그인 및 회원가입
-<img src="https://github.com/user-attachments/assets/c0a608e0-cfdf-447c-8f5c-2132657b8e9c" width="33%" />
-<img src="https://github.com/user-attachments/assets/25834ad4-92fb-41f4-91f7-3165f9043503" width="33%" />
-<img src="https://github.com/user-attachments/assets/7793bcf3-ab94-407b-bf86-1a417afba13d" width="33%" />
+<img src="https://github.com/user-attachments/assets/c0a608e0-cfdf-447c-8f5c-2132657b8e9c" width="32%" />
+<img src="https://github.com/user-attachments/assets/25834ad4-92fb-41f4-91f7-3165f9043503" width="32%" />
+<img src="https://github.com/user-attachments/assets/7793bcf3-ab94-407b-bf86-1a417afba13d" width="32%" />
 
 - 로그인 및 회원가입 기능입니다.
