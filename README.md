@@ -28,6 +28,7 @@
 - HTML, CSS, JavaScript, Bootstrap, JAVA, H2 Database, Apache Tomcat, Naver Open API, Spring Boot
 
 ## 팀프로젝트 상세
+**[ 주요 기능 ]**
 - 메인 화면: 컴퓨터 본체 내부를 미니멀리즘 기준으로 구성. 부품별 주요 정보 안내.
 - 부품 목록: 네이버 쇼핑 API를 활용. 부품별 상품 정보 확인 및 관심 목록 저장.
 - 관심 목록: 부품 목록에서 저장한 관심 부품 확인 및 구매처로 이동.
