@@ -73,13 +73,13 @@
 - 사이트에서 제공하는 정보 이외에 사용자들 간에 컴퓨터와 관련된 정보를 공유할 수 있습니다.
 
 ### ※ 로그인 및 회원가입
-|<img src="https://github.com/user-attachments/assets/c0a608e0-cfdf-447c-8f5c-2132657b8e9c" />|<img src="https://github.com/user-attachments/assets/25834ad4-92fb-41f4-91f7-3165f9043503" />|<img src="https://github.com/user-attachments/assets/7793bcf3-ab94-407b-bf86-1a417afba13d" />|
+|<img src="https://github.com/user-attachments/assets/c0a608e0-cfdf-447c-8f5c-2132657b8e9c" />|<img src="https://github.com/user-attachments/assets/25834ad4-92fb-41f4-91f7-3165f9043503" />|<img src="https://github.com/user-attachments/assets/7b20f035-73e3-4000-b6d6-be421e059cf5" />|
 |:---:|:---:|:---:|
-| 로그인 | 회원가입 | 마이 페이지 |
+| 로그인 | 회원가입 | 마이페이지 |
 
 - 로그인 및 회원가입 페이지입니다.
-- 로그인을 통해 관심 목록 및 마이 페이지 기능을 사용할 수 있습니다.
-- 마이 페이지에서 비밀번호를 변경할 수 있습니다.
+- 로그인을 통해 관심 목록 및 마이페이지 기능을 사용할 수 있습니다.
+- 마이페이지에서 비밀번호를 변경할 수 있습니다.
 
 ### ※ 고객센터
 |<img src="https://github.com/user-attachments/assets/70b0c819-2929-4c08-a276-1e40e2f5632b" />|<img src="https://github.com/user-attachments/assets/ed45fa0a-ed94-4931-87bd-e410dbfbf62e" />|
