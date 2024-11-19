@@ -84,7 +84,7 @@
 ### ※ 고객센터
 |<img src="https://github.com/user-attachments/assets/70b0c819-2929-4c08-a276-1e40e2f5632b" />|<img src="https://github.com/user-attachments/assets/ed45fa0a-ed94-4931-87bd-e410dbfbf62e" />|
 |:---:|:---:|
-| 사이트 설명 1 | 사이트 설명 2 |
+| 이용 관련 설명 1 | 이용 관련 설명 2 |
 
 - 고객센터 페이지입니다.
 - 사이트 이용과 관련된 정보들을 확인할 수 있습니다.
