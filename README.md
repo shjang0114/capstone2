@@ -78,8 +78,8 @@
 | 로그인 | 회원가입 | 마이페이지 |
 
 - 로그인 및 회원가입 페이지입니다.
-- 로그인을 통해 관심 목록 및 마이페이지 기능을 사용할 수 있습니다.
-- 마이페이지에서 비밀번호를 변경할 수 있습니다.
+- 로그인 후 관심 목록 및 마이페이지 기능을 사용할 수 있습니다.
+- 마이페이지를 통해 로그인한 계정의 비밀번호를 변경할 수 있습니다.
 
 ### ※ 고객센터
 |<img src="https://github.com/user-attachments/assets/70b0c819-2929-4c08-a276-1e40e2f5632b" />|<img src="https://github.com/user-attachments/assets/ed45fa0a-ed94-4931-87bd-e410dbfbf62e" />|
